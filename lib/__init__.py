@@ -8,7 +8,7 @@ CURSOR = CONN.cursor()
 create_squirrels_sql = """CREATE TABLE IF NOT EXISTS squirrels (
 id INTEGER PRIMARY KEY,
 name TEXT,
-num_acorns TEXT,
+num_acorns INT,
 rabid BOOLEAN
 )
 """

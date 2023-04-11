@@ -47,39 +47,26 @@ build out any helper methods if needed.
 
 ### Initializers and Properties
 
-#### Squirrel
-
 - `Squirrel __init__(self, name, num_acorns, rabid)`
   - `Squirrel` is initialized with a name (string), num_acorns (integer) and rabid (boolean)
 - `Squirrel property name()`
   - Returns the `Squirrel`'s name
   - Name must be a string between 1 and 15 characters
-- `Squirrel property num_acorns()`
-  - Returns the `Squirrel`'s number of acorns
-  - The num_acorns must be an integer greater or equal to 0
-- `Squirrel introduction()`
-  - Returns a string formateed like so:
-  - `"Hello! My name is {name} and I am {rabid | not rabid}"`
+
+### SQL Methods
+
 - `Squirrel save()`
   - Creates a squirrel in the database if an squirrel with the same id doesn't exist
   - Updates a squirrel in the database if a squirrel with the same id exists
 - `Squirrel classmethod query_all()`
   - Returns a list of squirrel instances based on rows in the database
   - The return value ought to be a list of Squirrel instances
-- `Squirrel classmethod query_one(id)`
-  - Returns a squirrel instance from the database with the matching id
-  - The return value ought to be a Squirrel instance
 - `Squirrel classmethod query_rabid()`
   - Returns a list of squirrel instances based on rows in the database
   - The return value ought to be a list of Squirrel instances
   - Only returns Squirrel instances which are rabid
-- `Squirrel delete()`
-  - Deletes the Squirrel from the database
-  - This method returns `None`
 
-### Aggregate and Association Methods
-
-#### Squirrel
+### BONUS
 
 - `Squirrel classmethod query_most_acorns()`
   - Returns the Squirrel in the database with the most acorns
