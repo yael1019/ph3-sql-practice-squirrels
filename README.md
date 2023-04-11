@@ -1,4 +1,4 @@
-# Phase 3 Mock Code Challenge - Squirrels at Home
+# Phase 3 Mock Code Challenge - Squirrels
 
 For this challenge, we'll be working with a domain that involves squirrels.
 
